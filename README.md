@@ -1,2 +1,3 @@
-# extremegymfitness-post-types
-Plugin para el tema ExtremeGymFitness
+# gymxtremes-post-types
+
+Plugin para el tema gymxtremes

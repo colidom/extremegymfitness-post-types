@@ -1,52 +1,52 @@
 <?php
 /*
     Plugin Name: Extreme Gym Fitness - Post Types
-    Plugin URI: https://github.com/colidom/extremegymfitness-post-types
+    Plugin URI: https://github.com/colidom/gymxtreme-post-types
     Description: Añade Post Types al sitio Extreme Gym Fitness.
     Version: 1.0.0
     Author: colidom
     Author URI: https://github.com/colidom
-    Text Domain: extremegymfitness
+    Text Domain: gymxtreme
 */
 
 if (!defined('ABSPATH')) die();
 
 // Registrar Custom Post Type
-function extremegymfitness_clases_post_type()
+function gymxtreme_clases_post_type()
 {
 
     $labels = array(
-        'name'                  => _x('Clases', 'Post Type General Name', 'extremegymfitness'),
-        'singular_name'         => _x('Clase', 'Post Type Singular Name', 'extremegymfitness'),
-        'menu_name'             => __('Clases', 'extremegymfitness'),
-        'name_admin_bar'        => __('Clase', 'extremegymfitness'),
-        'archives'              => __('Archivo', 'extremegymfitness'),
-        'attributes'            => __('Atributos', 'extremegymfitness'),
-        'parent_item_colon'     => __('Clase Padre', 'extremegymfitness'),
-        'all_items'             => __('Todas Las Clases', 'extremegymfitness'),
-        'add_new_item'          => __('Agregar Clase', 'extremegymfitness'),
-        'add_new'               => __('Agregar Clase', 'extremegymfitness'),
-        'new_item'              => __('Nueva Clase', 'extremegymfitness'),
-        'edit_item'             => __('Editar Clase', 'extremegymfitness'),
-        'update_item'           => __('Actualizar Clase', 'extremegymfitness'),
-        'view_item'             => __('Ver Clase', 'extremegymfitness'),
-        'view_items'            => __('Ver Clases', 'extremegymfitness'),
-        'search_items'          => __('Buscar Clase', 'extremegymfitness'),
-        'not_found'             => __('No Encontrado', 'extremegymfitness'),
-        'not_found_in_trash'    => __('No Encontrado en Papelera', 'extremegymfitness'),
-        'featured_image'        => __('Imagen Destacada', 'extremegymfitness'),
-        'set_featured_image'    => __('Guardar Imagen destacada', 'extremegymfitness'),
-        'remove_featured_image' => __('Eliminar Imagen destacada', 'extremegymfitness'),
-        'use_featured_image'    => __('Utilizar como Imagen Destacada', 'extremegymfitness'),
-        'insert_into_item'      => __('Insertar en Clase', 'extremegymfitness'),
-        'uploaded_to_this_item' => __('Agregado en Clase', 'extremegymfitness'),
-        'items_list'            => __('Lista de Clases', 'extremegymfitness'),
-        'items_list_navigation' => __('Navegación de Clases', 'extremegymfitness'),
-        'filter_items_list'     => __('Filtrar Clases', 'extremegymfitness'),
+        'name'                  => _x('Clases', 'Post Type General Name', 'gymxtreme'),
+        'singular_name'         => _x('Clase', 'Post Type Singular Name', 'gymxtreme'),
+        'menu_name'             => __('Clases', 'gymxtreme'),
+        'name_admin_bar'        => __('Clase', 'gymxtreme'),
+        'archives'              => __('Archivo', 'gymxtreme'),
+        'attributes'            => __('Atributos', 'gymxtreme'),
+        'parent_item_colon'     => __('Clase Padre', 'gymxtreme'),
+        'all_items'             => __('Todas Las Clases', 'gymxtreme'),
+        'add_new_item'          => __('Agregar Clase', 'gymxtreme'),
+        'add_new'               => __('Agregar Clase', 'gymxtreme'),
+        'new_item'              => __('Nueva Clase', 'gymxtreme'),
+        'edit_item'             => __('Editar Clase', 'gymxtreme'),
+        'update_item'           => __('Actualizar Clase', 'gymxtreme'),
+        'view_item'             => __('Ver Clase', 'gymxtreme'),
+        'view_items'            => __('Ver Clases', 'gymxtreme'),
+        'search_items'          => __('Buscar Clase', 'gymxtreme'),
+        'not_found'             => __('No Encontrado', 'gymxtreme'),
+        'not_found_in_trash'    => __('No Encontrado en Papelera', 'gymxtreme'),
+        'featured_image'        => __('Imagen Destacada', 'gymxtreme'),
+        'set_featured_image'    => __('Guardar Imagen destacada', 'gymxtreme'),
+        'remove_featured_image' => __('Eliminar Imagen destacada', 'gymxtreme'),
+        'use_featured_image'    => __('Utilizar como Imagen Destacada', 'gymxtreme'),
+        'insert_into_item'      => __('Insertar en Clase', 'gymxtreme'),
+        'uploaded_to_this_item' => __('Agregado en Clase', 'gymxtreme'),
+        'items_list'            => __('Lista de Clases', 'gymxtreme'),
+        'items_list_navigation' => __('Navegación de Clases', 'gymxtreme'),
+        'filter_items_list'     => __('Filtrar Clases', 'gymxtreme'),
     );
     $args = array(
-        'label'                 => __('Clase', 'extremegymfitness'),
-        'description'           => __('Clases para el Sitio Web', 'extremegymfitness'),
+        'label'                 => __('Clase', 'gymxtreme'),
+        'description'           => __('Clases para el Sitio Web', 'gymxtreme'),
         'labels'                => $labels,
         'supports'              => array('title', 'editor', 'thumbnail'),
         'hierarchical'          => true, // true = posts , false = paginas
@@ -63,6 +63,6 @@ function extremegymfitness_clases_post_type()
         'publicly_queryable'    => true,
         'capability_type'       => 'page',
     );
-    register_post_type('gymfitness_clases', $args);
+    register_post_type('gymxtreme_clases', $args);
 }
-add_action('init', 'extremegymfitness_clases_post_type', 0);
+add_action('init', 'gymxtreme_clases_post_type', 0);

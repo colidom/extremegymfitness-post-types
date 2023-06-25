@@ -63,6 +63,6 @@ function extremegymfitness_clases_post_type()
         'publicly_queryable'    => true,
         'capability_type'       => 'page',
     );
-    register_post_type('extremegymfitness_clases', $args);
+    register_post_type('gymfitness_clases', $args);
 }
 add_action('init', 'extremegymfitness_clases_post_type', 0);

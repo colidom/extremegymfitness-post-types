@@ -12,7 +12,7 @@
 if (!defined('ABSPATH')) die();
 
 // Registrar Custom Post Type
-function gymxtreme_clases_post_type()
+function gymxtreme_lessons_post_type()
 {
 
     $labels = array(
@@ -64,6 +64,6 @@ function gymxtreme_clases_post_type()
         'publicly_queryable'    => true,
         'capability_type'       => 'page',
     );
-    register_post_type('gymxtreme_clases', $args);
+    register_post_type('gymxtreme_lessons', $args);
 }
-add_action('init', 'gymxtreme_clases_post_type', 0);
+add_action('init', 'gymxtreme_lessons_post_type', 0);

@@ -44,6 +44,7 @@ function gymxtreme_clases_post_type()
         'items_list_navigation' => __('Navegación de Clases', 'gymxtreme'),
         'filter_items_list'     => __('Filtrar Clases', 'gymxtreme'),
     );
+
     $args = array(
         'label'                 => __('Clase', 'gymxtreme'),
         'description'           => __('Clases para el Sitio Web', 'gymxtreme'),

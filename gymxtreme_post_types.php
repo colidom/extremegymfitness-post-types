@@ -3,7 +3,7 @@
     Plugin Name: GymXtreme - Post Types
     Plugin URI: https://github.com/colidom/gymxtreme-post-types
     Description: Añade Post Types al sitio GymXtreme.
-    Seesion: 1.0.0
+    Version: 1.0.0
     Author: colidom
     Author URI: https://github.com/colidom
     Text Domain: gymxtreme

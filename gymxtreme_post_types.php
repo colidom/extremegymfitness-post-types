@@ -123,3 +123,59 @@ function gymxtreme_instructors_post_type()
     register_post_type('instructors', $args);
 }
 add_action('init', 'gymxtreme_instructors_post_type', 0);
+
+
+
+function gymxtreme_testimonials_post_type()
+{
+    $labels = array(
+        'name'                  => _x('Testimonials', 'Post Type General Name', 'gymxtreme'),
+        'singular_name'         => _x('Testimonial', 'Post Type Singular Name', 'gymxtreme'),
+        'menu_name'             => __('Testimonials', 'gymxtreme'),
+        'name_admin_bar'        => __('Testimonial', 'gymxtreme'),
+        'archives'              => __('Archive', 'gymxtreme'),
+        'attributes'            => __('Attributes', 'gymxtreme'),
+        'parent_item_colon'     => __('Parent Testimonial', 'gymxtreme'),
+        'all_items'             => __('All Testimonials', 'gymxtreme'),
+        'add_new_item'          => __('Add Testimonial', 'gymxtreme'),
+        'add_new'               => __('Add Testimonial', 'gymxtreme'),
+        'new_item'              => __('New Testimonial', 'gymxtreme'),
+        'edit_item'             => __('Edit Testimonial', 'gymxtreme'),
+        'update_item'           => __('Update Testimonial', 'gymxtreme'),
+        'view_item'             => __('See Testimonial', 'gymxtreme'),
+        'view_items'            => __('See Testimonials', 'gymxtreme'),
+        'search_items'          => __('Search Testimonial', 'gymxtreme'),
+        'not_found'             => __('Not found', 'gymxtreme'),
+        'not_found_in_trash'    => __('Not found in the trash', 'gymxtreme'),
+        'featured_image'        => __('Featured Image', 'gymxtreme'),
+        'set_featured_image'    => __('Save Featured Image', 'gymxtreme'),
+        'remove_featured_image' => __('Delete Featured Image', 'gymxtreme'),
+        'use_featured_image'    => __('Use as Featured Image', 'gymxtreme'),
+        'insert_into_item'      => __('Insert in Testimonial', 'gymxtreme'),
+        'uploaded_to_this_item' => __('Added in Testimonial', 'gymxtreme'),
+        'items_list'            => __('Testimonials list', 'gymxtreme'),
+        'items_list_navigation' => __('Testimonials navegation', 'gymxtreme'),
+        'filter_items_list'     => __('Filter Testimonials', 'gymxtreme'),
+    );
+    $args = array(
+        'label'                 => __('Testimonials', 'gymxtreme'),
+        'description'           => __('Testimonials para el Sitio Web', 'gymxtreme'),
+        'labels'                => $labels,
+        'supports'              => array('title', 'editor', 'thumbnail'),
+        'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_position'         => 8,
+        'menu_icon'             => 'dashicons-editor-quote',
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => false,
+        'exclude_from_search'   => false,
+        'publicly_queryable'    => true,
+        'capability_type'       => 'page',
+    );
+    register_post_type('testimonials', $args);
+}
+add_action('init', 'gymxtreme_testimonials_post_type', 0);
